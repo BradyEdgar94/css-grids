@@ -1,0 +1,68 @@
+<!-- Add you practice styles in these style tags -->
+<style>
+    @import url('../_core/css/style.css');
+    .grid-areas {
+      max-width: 500px;
+    }
+    .grid-areas .grid {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-template-areas: 
+        'header header header header'
+        'aside aside main main'
+        'nav nav main main'
+        'section section section section'
+        'section section section section'
+        'footer footer footer footer'
+      ;
+      /* grid-template-areas: 
+        'header header header header'
+        'aside aside main main'
+        'nav . main main'
+        'section section section section'
+        'section section section section'
+        'footer footer footer footer'
+      ; */
+      /* grid-template-areas: 
+        'header  header  header  header'
+        'aside   aside   main    main'
+        'nav     .     main    main'
+        'section section section section'
+        'section section section section'
+        'footer  footer  footer  footer'
+      ; */
+    }
+    .grid-areas .grid header {
+        grid-area: header;
+    }
+    .grid-areas .grid main {
+        grid-area: main;
+    }
+    .grid-areas .grid aside {
+        grid-area: aside;
+    }
+    .grid-areas .grid section {
+        grid-area: section;
+    }
+    .grid-areas .grid nav {
+        grid-area: nav;
+    }
+    .grid-areas .grid footer {
+        grid-area: footer;
+    }
+  </style>
+  
+  <!-- Add you practice markup below -->
+  <div class="grid-areas">
+    <div class="grid">
+      <header>Header</header>
+      <main>Main</main>
+      <section>Body Section</section>
+      <aside>Aside</aside>
+      <nav>Nav</nav>
+      <footer>Footer</footer>
+    </div>
+  </div>
+  

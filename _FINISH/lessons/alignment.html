@@ -1,0 +1,38 @@
+<!-- Add you practice styles in these style tags -->
+<style>
+    @import url('../_core/css/style.css');
+    .alignment {
+      max-width: 500px;
+    }
+    .alignment .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 150px 150px 150px;
+      /* align-items: start; */
+      align-items: center;
+      /* justify-items: end; */
+      justify-items: center;
+    }
+    .alignment .grid div:nth-child(2) {
+        align-self: end;
+    }
+    .alignment .grid div:nth-child(8) {
+        align-self: start;
+    }
+  </style>
+  
+  <!-- Add you practice markup below -->
+  <div class="alignment">
+    <div class="grid">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+  </div>
+  

@@ -1,0 +1,33 @@
+<!-- Add you practice styles in these style tags -->
+<style>
+    @import url('../_core/css/style.css');
+    .positioning {
+      max-width: 500px;
+    }
+    .positioning .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .positioning .grid > div:nth-child(1) {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .positioning .grid > div:nth-child(2) {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .positioning .grid > div:nth-child(3) {
+        grid-row: 3/4;
+        grid-column: 3/4;
+    }
+  </style>
+  
+  <!-- Add you practice markup below -->
+  <div class="positioning">
+    <div class="grid">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </div>
+  

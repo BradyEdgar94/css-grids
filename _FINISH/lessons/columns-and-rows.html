@@ -1,0 +1,35 @@
+<!-- Add you practice styles in these style tags -->
+<style>
+  @import url('../_core/css/style.css');
+  .columns-and-rows {
+    max-width: 500px;
+  }
+  .columns-and-rows .grid {
+    display: grid;
+    /* height: 500px; */
+    /* grid-template-columns: 150px 150px 150px; */
+    /* grid-template-columns: 33% 33% 33%; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(2, 1fr 2fr 1fr); */
+    grid-template-rows: repeat(3, 150px);
+    /* grid-template-rows: 33% 33% 33%; */
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    /* grid-template-rows: repeat(3, 1fr); */
+  }
+</style>
+
+<!-- Add you practice markup below -->
+<div id="columns-and-rows" class="columns-and-rows">
+  <div class="grid">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<!-- Add you practice styles in these style tags -->
+<style>
+  @import url('../_core/css/style.css');
+  .min-max {
+    max-width: 500px;
+  }
+
+  .min-max .grid {
+    display: grid;
+    /* grid-template-columns: repeat(3, minmax(10%, 200px)); */
+    /* grid-template-columns: minmax(80px, auto) 1fr 1fr; */
+    grid-template-columns: repeat(3, minmax(50px, auto));
+  }
+</style>
+
+<!-- Add you practice markup below -->
+<div class="min-max">
+  <div class="grid">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+      aliquam alias libero explicabo, officia facere quas dolore aliquid,
+      accusantium perferendis officiis dolor architecto magni facilis, sequi
+      dolorum! Libero, animi architecto!
+    </div>
+  </div>
+</div>
