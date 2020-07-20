@@ -1,8 +1,52 @@
 <!-- Add you practice styles in these style tags -->
 <style>
-  @import url('../_core/css/style.css');
+  @import url("../_core/css/style.css");
   .grid-areas {
     max-width: 500px;
+  }
+  .grid-areas .grid {
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    gap: 10px;
+    grid-template-areas:
+      "header  header  header  header"
+      "aside   aside   main    main"
+      "nav     nav     main    main"
+      "section section section section"
+      "section section section section"
+      "footer  footer  footer  footer";
+  }
+  @media screen and (max-width: 660px) {
+    .grid-areas .grid {
+      grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "section"
+      "section"
+      "footer"
+      ;
+    }
+  }
+  .grid-areas .grid header {
+    grid-area: header;
+  }
+  .grid-areas .grid main {
+    grid-area: main;
+  }
+  .grid-areas .grid section {
+    grid-area: section;
+  }
+  .grid-areas .grid aside {
+    grid-area: aside;
+  }
+  .grid-areas .grid nav {
+    grid-area: nav;
+  }
+  .grid-areas .grid footer {
+    grid-area: footer;
   }
 </style>
 
